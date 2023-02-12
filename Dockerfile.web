@@ -1,7 +1,7 @@
 # Dockerfile for build up the image
 FROM python:3.8
 
-LABEL MAINTAINER https://github.com/Nriver/anki-web-server
+LABEL MAINTAINER https://github.com/darkmusic/anki-web-server
 
 RUN echo "init anki-web-server"
 ADD flaskbp /app/flaskbp
