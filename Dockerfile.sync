@@ -3,7 +3,7 @@ FROM python:3.8
 
 RUN echo "init anki-sync-server"
 ADD ankisyncd /app/ankisyncd
-ADD ankisyncctl.py /app/ankisyncctl.py
+ADD ankisyncd_cli/ankisyncctl.py /app/ankisyncctl.py
 ADD requirements.txt /app/requirements.txt
 
 WORKDIR /app
