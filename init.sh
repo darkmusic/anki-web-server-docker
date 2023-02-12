@@ -1,5 +1,5 @@
 git clone https://github.com/ankicommunity/anki-sync-server.git
-git clone https://github.com/Nriver/anki-web-server.git
+git clone https://github.com/darkmusic/anki-web-server.git
 
 cp Dockerfile.sync anki-sync-server/src/Dockerfile
 cp Dockerfile.web anki-web-server/Dockerfile
