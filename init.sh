@@ -7,6 +7,10 @@ cp Dockerfile.web anki-web-server/Dockerfile
 # remove pyaudio from anki-sync-server as we do not need it
 sed -i'.bak' '/pyaudio/d' anki-sync-server/src/requirements.txt
 
+# Ensure that  correct Version onf Werkzeug is used
+# see https://stackoverflow.com/questions/77213053/why-did-flask-start-failing-with-importerror-cannot-import-name-url-quote-fr
+echo "Werkzeug==2.2.2" >> anki-web-server/requirements.txt
+
 # anki sync server will keep lock the database for a long time even after close anki desktop
 # to avoid that, we need to change the value of monitor_frequency and monitor_inactivity in to a small value
 
